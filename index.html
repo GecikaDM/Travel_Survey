@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/reset.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <title>Survey-Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Which traveller are you?</h1>
+    <p id="description">Thanks for taking time in our survey</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-areas">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="user_name" placeholder="Enter your name">
+    </div>
+    <div class="form-areas">
+      <label for="mail">e-mail</label>
+      <input id="mail" 
+        type="email" 
+        name="user_mail"
+        placeholder="Please enter your email"
+        onpaste="return false"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="example@domain.com"
+        required
+      >      
+    </div>
+    <div class="form-areas">
+      <label for="number">age</label>
+      <input id="number" 
+        type="number"
+        name="user_age"
+        placeholder="age"
+        min="10" max="100"
+        >
+    </div>
+    <div class="form-areas">
+      <label for="">What does escapism mean to you?</label>
+        <select id="dropdown" name="role" form="form-option">
+          <option disabled selected value>Select current role</option>
+          <option value="adventure">Adventure</option>
+          <option value="away">Getting away from it all</option>
+          <option value="beach">Beach life</option>
+          <option value="luxury">Ultimate luxury</option>
+          <option value="culture">Diving into local culture</option>
+        </select>
+    </div>
+    <div class="form-areas">
+        <fieldset>
+          <legend>Which region of the world do you travel?</legend>
+          <label for="africa">
+            <input 
+              type="checkbox"
+              name="region"
+              value="africa"
+              class="input-checkbox"
+              />Africa
+          </label>
+          <label for="europe">
+            <input 
+              type="checkbox"
+              name="region"
+              value="europe"
+              class="input-checkbox"
+              />Europe
+          </label>
+          <label for="north-america"></label>
+            <input 
+              type="checkbox"
+              name="region"
+              value="north-america"
+              class="input-checkbox"
+              />North America
+            <label for="south-america"></label>
+              <input 
+                type="checkbox"
+                name="region"
+                value="south-america"
+                class="input-checkbox"
+                />South America
+            <label for="central-america"></label>
+              <input 
+                  type="checkbox"
+                  name="region"
+                  value="central-america"
+                  class="input-checkbox"
+                />Central America
+            <label for="oceania"></label>
+              <input 
+                type="checkbox"
+                name="region"
+                value="oceania"
+                class="input-checkbox"
+                />Oceania
+            <label for="caribbean"></label>
+                <input 
+                  type="checkbox"
+                  name="region"
+                  value="caribbean"
+                  class="input-checkbox"
+                  />The Caribbean
+            <label for="eastern-middle"></label>
+              <input 
+                type="checkbox"
+                name="region"
+                value="eastern-middle"
+                class="input-checkbox"
+                />Eastern/Middle-East
+          </fieldset>
+    </div>
+    <div class="form-areas">
+      <label for="">When going on a trip, who do you usually travel with?</label>
+        <select id="cars" name="preference" form="form-option">
+          <option disabled selected value>Select your preference</option>
+          <option value="lover">Your lover</option>
+          <option value="friends">Friends</option>
+          <option value="family">Family</option>
+          <option value="me">Me, myself and I</option>
+        </select>
+    </div>
+    <div class="form-areas">
+      <fieldset>
+        <legend>What best describes the kind of luggage you usually carry around?</legend>
+          <input 
+            type="radio"
+            name="style-lugage"
+            value=""
+            class="input-radio"
+            />just a backpack
+      
+          <input 
+            type="radio"
+            name="style-lugage"
+            value=""
+            class="input-radio"
+            />A small carry-on, because I hate lugging around large suitcases
+      
+          <input 
+            type="radio"
+            name="style-lugage"
+            value=""
+            class="input-radio"
+            />A huge one, I always overpack
+        </fieldset>
+    </div>
+    <div class="form-areas">
+      <label for="comments">One of the best anecdote</label>
+        <textarea name="comments" id="" cols="50" rows="10"></textarea>
+    </div>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
