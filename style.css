@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+}
+
+*  { 
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4) ) ,url('./assets/world\'s\ hand.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+label,
+legend {
+  font-weight: 600;
+}
+.photographer {
+  float: right;
+  opacity: 0.5;
+  color: #fff;
+  font-style: italic;
+  size: 0.5 rem;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 30px 0;
+}
+#title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#description {
+  font-size: 1rem;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+#survey-form {
+  margin: 0 auto;
+  padding: 15px 10px;
+  width: 600px;
+  border: 2px solid  #fff;
+  border-radius: 3px; 
+}
+.form-areas {
+  margin: 25px 10px;
+}
+.form-input {
+  width: 100%;
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+.input-legends {
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+button {
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border: 2px solid #34ace0;
+  border-radius: 5px;
+}
+#footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+}
+
+@media screen and  (max-width: 425px) {
+
+}
