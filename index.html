@@ -15,145 +15,149 @@
     <h1 id="title">Which traveller are you?</h1>
     <p id="description">Thanks for taking time in our survey</p>
   </header>
-  <form id="survey-form">
-    <div class="form-areas">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="user_name" placeholder="Enter your name">
-    </div>
-    <div class="form-areas">
-      <label for="mail">e-mail</label>
-      <input id="mail" 
-        type="email" 
-        name="user_mail"
-        placeholder="Please enter your email"
-        onpaste="return false"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="example@domain.com"
-        required
-      >      
-    </div>
-    <div class="form-areas">
-      <label for="number">age</label>
-      <input id="number" 
-        type="number"
-        name="user_age"
-        placeholder="age"
-        min="10" max="100"
-        >
-    </div>
-    <div class="form-areas">
-      <label for="">What does escapism mean to you?</label>
-        <select id="dropdown" name="role" form="form-option">
-          <option disabled selected value>Select current role</option>
-          <option value="adventure">Adventure</option>
-          <option value="away">Getting away from it all</option>
-          <option value="beach">Beach life</option>
-          <option value="luxury">Ultimate luxury</option>
-          <option value="culture">Diving into local culture</option>
-        </select>
-    </div>
-    <div class="form-areas">
-        <fieldset>
-          <legend>Which region of the world do you travel?</legend>
-          <label for="africa">
-            <input 
-              type="checkbox"
-              name="region"
-              value="africa"
-              class="input-checkbox"
-              />Africa
-          </label>
-          <label for="europe">
-            <input 
-              type="checkbox"
-              name="region"
-              value="europe"
-              class="input-checkbox"
-              />Europe
-          </label>
-          <label for="north-america"></label>
-            <input 
-              type="checkbox"
-              name="region"
-              value="north-america"
-              class="input-checkbox"
-              />North America
-            <label for="south-america"></label>
+    <form id="survey-form">
+      <div class="form-areas">
+        <label for="name-label">Name</label>
+        <input type="text" id="name" class="form-input" name="user_name" placeholder="Enter your name">
+      </div>
+      <div class="form-areas">
+        <label for="email-label">E-mail</label>
+        <input id="email" 
+          type="email" 
+          name="user_mail"
+          class="form-input"
+          placeholder="Please enter your email"
+          onpaste="return false"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="example@domain.com"
+          required
+        >      
+      </div>
+      <div class="form-areas">
+        <label for="number-label">Age</label>
+        <input id="number" 
+          type="number"
+          class="form-input"
+          name="user_age"
+          placeholder="age"
+          pattern="[0-9]+"
+          min="10" max="100"
+          >
+      </div>
+      <div class="form-areas">
+        <label for="">What does escapism mean to you?</label>
+          <select id="dropdown" class="form-input" name="role" form="form-option" >
+            <option disabled selected value>Select current role</option>
+            <option value="adventure">Adventure</option>
+            <option value="away">Getting away from it all</option>
+            <option value="beach">Beach life</option>
+            <option value="luxury">Ultimate luxury</option>
+            <option value="culture">Diving into local culture</option>
+          </select>
+      </div>
+      <div class="form-areas">
+          <fieldset>
+            <legend class="input-legends">Which region of the world do you travel?</legend>
+            <label for="africa"></label>
               <input 
                 type="checkbox"
                 name="region"
-                value="south-america"
+                value="africa"
                 class="input-checkbox"
-                />South America
-            <label for="central-america"></label>
-              <input 
-                  type="checkbox"
-                  name="region"
-                  value="central-america"
-                  class="input-checkbox"
-                />Central America
-            <label for="oceania"></label>
+                />Africa
+            <label for="europe"> </label>
               <input 
                 type="checkbox"
                 name="region"
-                value="oceania"
+                value="europe"
                 class="input-checkbox"
-                />Oceania
-            <label for="caribbean"></label>
+                />Europe
+            <label for="north-america"></label>
+              <input 
+                type="checkbox"
+                name="region"
+                value="north-america"
+                class="input-checkbox"
+                />North America
+              <label for="south-america"></label>
                 <input 
                   type="checkbox"
                   name="region"
-                  value="caribbean"
+                  value="south-america"
                   class="input-checkbox"
-                  />The Caribbean
-            <label for="eastern-middle"></label>
+                  />South America
+              <label for="central-america"></label>
+                <input 
+                    type="checkbox"
+                    name="region"
+                    value="central-america"
+                    class="input-checkbox"
+                  />Central America
+              <label for="oceania"></label>
+                <input 
+                  type="checkbox"
+                  name="region"
+                  value="oceania"
+                  class="input-checkbox"
+                  />Oceania
+              <label for="caribbean"></label>
+                  <input 
+                    type="checkbox"
+                    name="region"
+                    value="caribbean"
+                    class="input-checkbox"
+                    />The Caribbean
+              <label for="eastern-middle"></label>
+                <input 
+                  type="checkbox"
+                  name="region"
+                  value="eastern-middle"
+                  class="input-checkbox"
+                  />Eastern/Middle-East
+            </fieldset>
+      </div>
+      <div class="form-areas">
+        <label for="">When going on a trip, who do you usually travel with?</label>
+          <select id="cars" class="form-input" name="preference" form="form-option">
+            <option disabled selected value>Select your preference</option>
+            <option value="lover">Your lover</option>
+            <option value="friends">Friends</option>
+            <option value="family">Family</option>
+            <option value="me">Me, myself and I</option>
+          </select>
+      </div>
+      <div class="form-areas">
+        <fieldset>
+          <legend class="input-legends">What best describes the kind of luggage you usually carry around?</legend>
+          <label for="backpack"></label>  
+          <input 
+              type="radio"
+              name="style-lugage"
+              value="backpack"
+              class="input-radio"
+              />just a backpack
+            <label for="small-carry"></label>
+            <input 
+              type="radio"
+              name="style-lugage"
+              value="small-carry"
+              class="input-radio"
+              />A small carry-on, because I hate lugging around large suitcases
+            <label for="huge"></label>
               <input 
-                type="checkbox"
-                name="region"
-                value="eastern-middle"
-                class="input-checkbox"
-                />Eastern/Middle-East
+              type="radio"
+              name="style-lugage"
+              value="huge"
+              class="input-radio"
+              />A huge one, I always overpack
           </fieldset>
-    </div>
-    <div class="form-areas">
-      <label for="">When going on a trip, who do you usually travel with?</label>
-        <select id="cars" name="preference" form="form-option">
-          <option disabled selected value>Select your preference</option>
-          <option value="lover">Your lover</option>
-          <option value="friends">Friends</option>
-          <option value="family">Family</option>
-          <option value="me">Me, myself and I</option>
-        </select>
-    </div>
-    <div class="form-areas">
-      <fieldset>
-        <legend>What best describes the kind of luggage you usually carry around?</legend>
-          <input 
-            type="radio"
-            name="style-lugage"
-            value=""
-            class="input-radio"
-            />just a backpack
-      
-          <input 
-            type="radio"
-            name="style-lugage"
-            value=""
-            class="input-radio"
-            />A small carry-on, because I hate lugging around large suitcases
-      
-          <input 
-            type="radio"
-            name="style-lugage"
-            value=""
-            class="input-radio"
-            />A huge one, I always overpack
-        </fieldset>
-    </div>
-    <div class="form-areas">
-      <label for="comments">One of the best anecdote</label>
-        <textarea name="comments" id="" cols="50" rows="10"></textarea>
-    </div>
-    <input id="submit" type="submit" value="Submit">
-  </form>
+      </div>
+      <div class="form-areas">
+        <label for="comments">Can you tell us one of the best anecdote</label>
+          <textarea name="comments" id="" cols="45" rows="10" placeholder="Tell us your best anecdote!!"></textarea>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  <p class="photographer">Photo from Porapak Apichodilok providing by Pexels</p>
+  <footer id="footer">Made by GDM with 💪 </footer>
 </body>
 </html>
